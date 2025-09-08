@@ -16,8 +16,9 @@ pygame.display.set_caption('Eerste game!')
 clock = pygame.time.Clock()
 running = True
 
-surface = pygame.Surface((100, 100))
+surface = pygame.Surface((900, 400))
 surface.fill("blue")
+
 
 while running:
 
