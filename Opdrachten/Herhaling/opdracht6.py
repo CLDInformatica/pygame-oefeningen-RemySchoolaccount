@@ -11,3 +11,15 @@
 # Voer hierna de functie uit met verschillende inputs en bekijk de resultaten.
 # Let op: Het is verplicht om een functie te gebruiken!
 
+def rekenmachine(getal1, getal2, operatie):
+    if operatie == "-":
+        print(getal1 - getal1)
+    elif operatie == "+":
+        print(getal1 + getal2)
+    elif operatie == "x":
+        print(getal1 * getal2)
+    else:
+        print(getal1 /getal2)
+
+print(rekenmachine(22, 3, "+"))
+print(rekenmachine(22, 3, "/"))
