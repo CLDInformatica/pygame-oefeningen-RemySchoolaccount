@@ -12,13 +12,27 @@ import pygame
 pygame.init()
 
 screen = pygame.display.set_mode((800, 400))
-pygame.display.set_caption('Eerste game!')
+pygame.display.set_caption('Fake flappybird!')
 clock = pygame.time.Clock()
 running = True
 
 surface = pygame.Surface((900, 400))
 surface.fill("blue")
 
+bird = pygame.Surface((25, 25))
+bird.fill("yellow")
+
+paarse_dildo_1 = pygame.Surface((50, 200))
+paarse_dildo_1.fill("green")
+
+paarse_dildo_2 = pygame.Surface((50, 100))
+paarse_dildo_2.fill("green")
+
+paarse_dildo_3 = pygame.Surface((50, 100))
+paarse_dildo_3.fill("green")
+
+paarse_dildo_4 = pygame.Surface((50, 500))
+paarse_dildo_4.fill("green")
 
 while running:
 
@@ -27,6 +41,11 @@ while running:
       running = False
 
   screen.blit(surface, (0, 0))
-  
+  screen.blit(bird, (50, 200))
+  screen.blit(paarse_dildo_1, (150, 0))
+  screen.blit(paarse_dildo_2, (150, 300))
+  screen.blit(paarse_dildo_3, (300, 0))
+  screen.blit(paarse_dildo_4, (300, 150))
+
   pygame.display.update()
   clock.tick(60)
